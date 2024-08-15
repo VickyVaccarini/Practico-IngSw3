@@ -15,13 +15,13 @@
 ![Descripción Imagen 1](imagenes/8.png)
 #### 5. Construir una imagen
 #### Describir las siguientes instrucciones:
-#### •	FROM: traemos la imagen base
-#### •	RUN: corre un comando dentro del contenedor
-#### •	ADD: agrega archivos
-#### •	COPY: copia archivos
-#### •	EXPOSE: expone puertos
-#### •	CMD: otra forma de decirle que haga algo
-#### •	ENTRYPOINT: el más importante, nos dice con qué archivo ejecutable queda corriendo mi contenedor
+##### •	FROM: traemos la imagen base
+##### •	RUN: corre un comando dentro del contenedor
+##### •	ADD: agrega archivos
+##### •	COPY: copia archivos
+##### •	EXPOSE: expone puertos
+##### •	CMD: otra forma de decirle que haga algo
+##### •	ENTRYPOINT: el más importante, nos dice con qué archivo ejecutable queda corriendo mi contenedor
 ![Descripción Imagen 1](imagenes/9.png)
 ![Descripción Imagen 1](imagenes/10.png)
 ![Descripción Imagen 1](imagenes/11.png)
@@ -53,4 +53,26 @@
 ![Descripción Imagen 1](imagenes/26.png)
 ![Descripción Imagen 1](imagenes/27.png)
 ![Descripción Imagen 1](imagenes/28.png)
+#### 8. Montando volúmenes
+![Descripción Imagen 1](imagenes/29.png)
+![Descripción Imagen 1](imagenes/30.png)
+#### 9. Utilizando una base de datos
+![Descripción Imagen 1](imagenes/31.png)
+![Descripción Imagen 1](imagenes/32.png)
+![Descripción Imagen 1](imagenes/33.png)
+##### •	docker run: Crea y ejecuta un nuevo contenedor, configurando una instancia de PostgreSQL con almacenamiento persistente, y la expone para que sea accesible desde fuera del contenedor.
+##### •	docker exec: Proporciona acceso interactivo a un contenedor en ejecución, permitiendo la administración directa de la base de datos u otras operaciones de mantenimiento dentro del entorno del contenedor.
+#### 10. Hacer el punto anterior con Microsoft SQL Server
+![Descripción Imagen 1](imagenes/34.png)
+![Descripción Imagen 1](imagenes/35.png)
+![Descripción Imagen 1](imagenes/36.png)
+#### El comando sqlcmd no está disponible en el contenedor de SQL Server o la ruta es incorrecta. 
+#### Por eso, accedemos al contenedor de SQL Server con una shell interactiva para investigar y una vez dentro del contenedor, busco el archivo sqlcmd
+![Descripción Imagen 1](imagenes/37.png)
+#### Acá veo que sqlcmd está en /opt/mssql-tools18/bin/sqlcmd (otra ruta).
+![Descripción Imagen 1](imagenes/38.png)
+#### Conectándome a DBeaver
+![Descripción Imagen 1](imagenes/39.png)
+
+
 
