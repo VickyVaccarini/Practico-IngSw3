@@ -62,8 +62,8 @@
 ![Descripción Imagen 1](imagenes/19.png)
 ![Descripción Imagen 1](imagenes/20.png)
 #### Pipeline corriendo
-![Descripción Imagen 1](imagenes/31.png)
-![Descripción Imagen 1](imagenes/32.png)
+![Descripción Imagen 1](imagenes/31.jpg)
+![Descripción Imagen 1](imagenes/32.jpg)
 #### 9. Crear un sprint
 #### Al sprint que ya tenía, le agregué fechas. 
 ![Descripción Imagen 1](imagenes/21.png)
