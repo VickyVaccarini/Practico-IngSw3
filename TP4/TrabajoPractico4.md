@@ -15,10 +15,10 @@
 #### - Agentes Self-Hosted: Configurados en servidores propios, ofreciendo mayor control y personalización, ideales para entornos específicos o necesidades especiales de ejecución sin depender de la infraestructura de Microsoft.
 
 #### 1. Verificar acceso a Pipelines concedido
-![Descripción Imagen 1](imagenes/1.png)
+![Descripción Imagen 1](imagenes/1.jpg)
 
 #### 2. Agregar en pipeline YAML una tarea de Publish.
-![Descripción Imagen 1](imagenes/2.png)
+![Descripción Imagen 1](imagenes/2.jpg)
 
 #### 3. Explicar por qué es necesario contar con una tarea de Publish en un pipeline que corre en un agente de Microsoft en la nube.
 #### Cuando se ejecuta un pipeline en un agente en la nube, los archivos generados solo persisten durante la ejecución del pipeline. Para poder descargarlos o reutilizarlos en otros pipelines, es necesario publicarlos como artefactos. Esto permite almacenar temporalmente los resultados y acceder a ellos en etapas posteriores o desde la interfaz web.
