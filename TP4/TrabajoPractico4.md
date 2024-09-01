@@ -66,3 +66,32 @@
 ![Descripción Imagen 1](imagenes/20.jpg)
 ![Descripción Imagen 1](imagenes/21.jpg)
 ![Descripción Imagen 1](imagenes/22.jpg)
+
+#### 12 Crear un nuevo proyecto en ADO clonado desde un repo que contenga una aplicación en Angular como por ejemplo https://github.com/ingsoft3ucc/angular-demo-project.git
+![Descripción Imagen 1](imagenes/23.jpg)
+![Descripción Imagen 1](imagenes/24.jpg)
+
+#### 13 Configurar un pipeline de build para un proyecto de tipo Angular como el clonado.
+![Descripción Imagen 1](imagenes/25.jpg)
+![Descripción Imagen 1](imagenes/26.jpg)
+![Descripción Imagen 1](imagenes/27.jpg)
+![Descripción Imagen 1](imagenes/28.jpg)
+
+#### 14 Habilitar CI para el pipeline.
+![Descripción Imagen 1](imagenes/29.jpg)
+
+#### 15 Hacer un cambio a un archivo del proyecto (algún cambio en el HTML que se renderiza por ejemplo) y verificar que se ejecute automáticamente el pipeline.
+![Descripción Imagen 1](imagenes/30.jpg)
+![Descripción Imagen 1](imagenes/31.jpg)
+
+#### 16 Descargar el resultado del pipeline y correr en un servidor web local el sitio construido.
+![Descripción Imagen 1](imagenes/32.jpg)
+![Descripción Imagen 1](imagenes/33.jpg)
+
+#### 17 Mostrar el antes y el después del cambio.
+![Descripción Imagen 1](imagenes/34.jpg)
+![Descripción Imagen 1](imagenes/35.jpg)
+
+
+
+
