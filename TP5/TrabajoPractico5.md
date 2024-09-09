@@ -23,6 +23,47 @@
 ![Descripción Imagen 1](imagenes/16.jpg)
 ![Descripción Imagen 1](imagenes/17.jpg)
 ![Descripción Imagen 1](imagenes/18.jpg)
+#### Le cambio el nombre
+![Descripción Imagen 1](imagenes/19.jpg)
+
+#### 4. Optimizar Pipeline de Build. 
+#### El pipeline del build ya está optimizado (.yaml que nos pasó el profe)
+
+#### 5. Verificar el deploy en la url de la WebApp /weatherforecast
+![Descripción Imagen 1](imagenes/20.jpg)
+![Descripción Imagen 1](imagenes/21.jpg)
+![Descripción Imagen 1](imagenes/22.jpg)
+
+#### 6. Realizar un cambio al código del controlador para que devuelva 7 pronósticos, realizar commit, evaluar ejecución de pipelines de build y release, navegar a la url de la webapp/weatherforecast y corroborar cambio
+![Descripción Imagen 1](imagenes/23.jpg)
+#### Luego del commit se ejecutan los pipelines y vemos que lo hacen de forma correcta
+![Descripción Imagen 1](imagenes/24.jpg)
+![Descripción Imagen 1](imagenes/25.jpg)
+#### Vemos que están los 7 pronósticos
+![Descripción Imagen 1](imagenes/26.jpg)
+
+#### 7. Clonar la Web App de QA para que contar con una WebApp de PROD a partir de un Template Deployment en Azure Portal y navegar a la url provista para la WebApp de PROD.
+![Descripción Imagen 1](imagenes/27.jpg)
+![Descripción Imagen 1](imagenes/28.jpg)
+![Descripción Imagen 1](imagenes/29.jpg)
+![Descripción Imagen 1](imagenes/30.jpg)
+![Descripción Imagen 1](imagenes/31.jpg)
+![Descripción Imagen 1](imagenes/32.jpg)
+
+#### 8. Agregar una etapa de Deploy a Prod en Azure Release Pipelines
+![Descripción Imagen 1](imagenes/33.jpg)
+![Descripción Imagen 1](imagenes/34.jpg)
+![Descripción Imagen 1](imagenes/35.jpg)
+
+#### 9. Realizar un cambio al código del controlador para que devuelva 10 pronósticos, realizar commit, evaluar ejecución de pipelines de build y release, navegar a la url de la webapp/weatherforecast y corroborar cambio, verificar que en la url de la webapp_prod/weatherforecast se muestra lo mismo. 
+![Descripción Imagen 1](imagenes/36.jpg)
+#### Vemos que en el QA aparecen los 10 pronósticos
+![Descripción Imagen 1](imagenes/37.jpg)
+#### Y también vemos que aparecen en el PROD
+![Descripción Imagen 1](imagenes/38.jpg)
+
+#### 10. 
+
 
 
 
