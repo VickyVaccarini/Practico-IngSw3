@@ -62,7 +62,31 @@
 #### Y también vemos que aparecen en el PROD
 ![Descripción Imagen 1](imagenes/38.jpg)
 
-#### 10. 
+#### 10. Modificar pipeline de release para colocar una aprobación manual para el paso a Producción.
+![Descripción Imagen 1](imagenes/39.jpg)
+
+#### 11. Realizar un cambio al código del controlador para que devuelva 5 pronósticos, realizar commit, evaluar ejecución de pipelines de build y release, navegar a la url de la webapp/weatherforecast y corroborar cambio, verificar que en la url de la webapp_prod/weatherforecast aun se muestra la versión anterior.
+![Descripción Imagen 1](imagenes/40.jpg)
+#### Vemos que solo se actualizó en el QA
+![Descripción Imagen 1](imagenes/41.jpg)
+
+#### 12. Aprobar el pase ya sea desde el release o desde el mail recibido.
+![Descripción Imagen 1](imagenes/42.jpg)
+![Descripción Imagen 1](imagenes/43.jpg)
+![Descripción Imagen 1](imagenes/44.jpg)
+#### Se hizo el deploy a PROD
+![Descripción Imagen 1](imagenes/45.jpg)
+#### Notar que se puede dar la aprobación, pero posponer su aplicación hasta una determinada fecha
+
+#### 13. Esperar a la finalización de la etapa de Pase a Prod y luego corroborar que en la url de la webapp_prod/weatherforecast se muestra la nueva versión coinicidente con la de QA.
+![Descripción Imagen 1](imagenes/46.jpg)
+
+#### 14. Realizar un pipeline (no release) que incluya el deploy a QA y a PROD con una aprobación manual. El pipeline debe estar construido en YAML sin utilizar el editor clásico de pipelines ni el editor clásico de pipelines de release.
+![Descripción Imagen 1](imagenes/47.jpg)
+![Descripción Imagen 1](imagenes/48.jpg)
+![Descripción Imagen 1](imagenes/49.jpg)
+![Descripción Imagen 1](imagenes/50.jpg)
+
 
 
 
