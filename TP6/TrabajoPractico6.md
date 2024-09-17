@@ -90,12 +90,29 @@
 #### •	Verificar que no haya palabras vacías o que el nombre no esté compuesto solo de espacios.
 #### •	Asegurar que cada parte del nombre (separada por espacios) tenga al menos un carácter o más, por ejemplo, para evitar "A B".
 #### En todos los casos donde no se cumplan las condiciones, la API debe devolver un error de HTTP 400 Bad Request y un Json indicando el error, por ejemplo: { "status": 400, "error": "Bad Request", "message": "El nombre del empleado ya existe." }
+![Descripción Imagen 1](imagenes/34.jpg)
+![Descripción Imagen 1](imagenes/35.jpg)
+![Descripción Imagen 1](imagenes/36.jpg)
+
 #### B. Crear las pruebas unitarias necesarias para validar las modificaciones realizadas en el código
+![Descripción Imagen 1](imagenes/37.jpg)
+![Descripción Imagen 1](imagenes/38.jpg)
+![Descripción Imagen 1](imagenes/39.jpg)4
+#### Vemos que se ejecutan correctamente
+![Descripción Imagen 1](imagenes/40.jpg)
 
 #### 4.7 Modificamos el código de nuestro Front y creamos nuevas pruebas unitarias:
+![Descripción Imagen 1](imagenes/41.jpg)
 #### A. Realizar en el código del front las mismas modificaciones hechas a la API. 
+![Descripción Imagen 1](imagenes/42.jpg)
+![Descripción Imagen 1](imagenes/43.jpg)
 #### B. Las validaciones deben ser realizadas en el front sin llegar a la API, y deben ser mostradas en un toast como por ejemplo https://stackblitz.com/edit/angular12-toastr?file=src%2Fapp%2Fapp.component.ts o https://stackblitz.com/edit/angular-error-toast?file=src%2Fapp%2Fcore%2Frxjsops.ts
+![Descripción Imagen 1](imagenes/44.jpg)
 #### C. Crear las pruebas unitarias necesarias en el front para validar las modificaciones realizadas en el código del front.
+![Descripción Imagen 1](imagenes/45.jpg)
+![Descripción Imagen 1](imagenes/46.jpg)
+![Descripción Imagen 1](imagenes/47.jpg)
+![Descripción Imagen 1](imagenes/48.jpg)
 
 
 
