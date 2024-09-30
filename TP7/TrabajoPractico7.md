@@ -71,3 +71,30 @@
 #### -	Hacemos "Add command to the test" y empezamos a interactuar con la página
 #### o	Hacemos algunos ajustes al código generado:
 ![Descripción Imagen 1](imagenes/33.jpg)
+#### 4.4 Desafíos:
+#### •	Integrar en el pipeline SonarCloud para nuestro proyecto Angular, mostrar el resultado obtenido en SonarCloud
+![Descripción Imagen 1](imagenes/34.jpg) 
+![Descripción Imagen 1](imagenes/35.jpg)
+![Descripción Imagen 1](imagenes/36.jpg) 
+#### •	Implementar en Cypress pruebas de integración que incluya los casos desarrollados como pruebas unitarias del front en el TP06.
+![Descripción Imagen 1](imagenes/37.jpg) 
+![Descripción Imagen 1](imagenes/38.jpg)
+![Descripción Imagen 1](imagenes/39.jpg) 
+![Descripción Imagen 1](imagenes/40.jpg)
+![Descripción Imagen 1](imagenes/41.jpg) 
+![Descripción Imagen 1](imagenes/42.jpg)
+![Descripción Imagen 1](imagenes/43.jpg) 
+![Descripción Imagen 1](imagenes/44.jpg)
+![Descripción Imagen 1](imagenes/45.jpg) 
+![Descripción Imagen 1](imagenes/46.jpg)
+![Descripción Imagen 1](imagenes/47.jpg) 
+![Descripción Imagen 1](imagenes/48.jpg)
+
+#### •	Incorporar al pipeline de Deploy la ejecución de las pruebas de integración y la visualización de sus resultados.
+#### •	Resultado esperado:
+#### o	Un Pipeline en YAML que incluya a) Build de QA y Front con ejecución y resultado de pruebas de code coverage, pruebas unitarias y análisis de Sonar Cloud y b) Deploy a WebApp(s) de QA y Front que incluya ejecución y resultado de pruebas de integración
+#### o	Dos Stages: Una para Build, Test Unitarios, Code Coverage y SonarCloud y otra para el Deploy a QA con Tests de Integración
+#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
+#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
+#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
+#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
