@@ -93,8 +93,26 @@
 #### •	Incorporar al pipeline de Deploy la ejecución de las pruebas de integración y la visualización de sus resultados.
 #### •	Resultado esperado:
 #### o	Un Pipeline en YAML que incluya a) Build de QA y Front con ejecución y resultado de pruebas de code coverage, pruebas unitarias y análisis de Sonar Cloud y b) Deploy a WebApp(s) de QA y Front que incluya ejecución y resultado de pruebas de integración
+![Descripción Imagen 1](imagenes/49.jpg)
 #### o	Dos Stages: Una para Build, Test Unitarios, Code Coverage y SonarCloud y otra para el Deploy a QA con Tests de Integración
+![Descripción Imagen 1](imagenes/50.jpg)
 #### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
-#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
-#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
-#### o	En la pestaña Test, poder visualizar los Test Unitarios de Front y Back y los Test de Integracion:
+![Descripción Imagen 1](imagenes/51.jpg)
+#### o	En la pestaña Code Coverage, visualizar la cobertura de las pruebas unitarias de Back y de Front:
+![Descripción Imagen 1](imagenes/52.jpg)
+#### o	En la pestaña Extensions, ver el análisis de SonarCloud en verde
+![Descripción Imagen 1](imagenes/53.jpg) 
+![Descripción Imagen 1](imagenes/54.jpg)
+![Descripción Imagen 1](imagenes/55.jpg)
+#### 4.4.4 Un documento de una carilla explicando qué información pudieron sacar del análisis de Sonar Cloud y de las pruebas de cobertura.
+#### Calidad del Código: El análisis de SonarCloud reveló varias métricas clave sobre la calidad del código:
+#### •	Vulnerabilidades: Se identificaron vulnerabilidades que requieren atención para mitigar riesgos de seguridad en la aplicación. 
+#### •	Deuda Técnica: El análisis mostró que la deuda técnica está presente, lo cual afecta la mantenibilidad y escalabilidad del proyecto. 
+#### Metrologías de Cobertura. Los resultados de las pruebas de cobertura indican lo siguiente:
+#### •	Cobertura Total: La cobertura total del código es del 54.55%, lo que significa que, de un total de 209 líneas de código, se han ejecutado 114 líneas durante las pruebas.
+#### •	Cobertura por Módulo: Se presentan los resultados de cobertura de algunos módulos críticos:
+![Descripción Imagen 1](imagenes/56.jpg)
+##### o	Los controladores tienen una cobertura del 100%, lo cual es excelente y muestra que todas las rutas de este módulo están siendo probadas adecuadamente.
+##### o	Sin embargo, el archivo Program.cs presenta una cobertura del 0%, lo que indica que no se están ejecutando pruebas en este módulo. Es crucial agregar pruebas para este archivo para mejorar la cobertura total.
+##### o	El componente addemployee.component.ts tiene una baja cobertura del 16.07%, lo que sugiere que muchas de sus funcionalidades no están siendo probadas. Se recomienda crear más pruebas para cubrir los casos de uso de este componente.
+
