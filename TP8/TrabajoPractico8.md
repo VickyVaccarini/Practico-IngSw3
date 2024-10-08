@@ -24,14 +24,23 @@
 ![Descripción Imagen 1](imagenes/8.jpg)
 ##### 4.1.6 Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Build y Test
 ##### - Agregar tareas para generar imagen Docker de Back
-   	   	
+![Descripción Imagen 1](imagenes/9.jpg)
+![Descripción Imagen 1](imagenes/10.jpg)
 ##### 4.1.7 - Ejecutar el pipeline y en Azure Portal acceder a la opción Repositorios de nuestro recurso Azure Container Registry. Verificar que exista una imagen con el nombre especificado en la variable backImageName asignada en nuestro pipeline
-
+![Descripción Imagen 1](imagenes/11.jpg)
+![Descripción Imagen 1](imagenes/12.jpg)
 ##### 4.1.8 - Agregar tareas para generar imagen Docker de Front (DESAFIO)
 #####  	  - A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
+![Descripción Imagen 1](imagenes/13.jpg)
+![Descripción Imagen 1](imagenes/14.jpg)
+![Descripción Imagen 1](imagenes/15.jpg)
+![Descripción Imagen 1](imagenes/16.jpg)
 ##### 4.1.9 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción de Imagenes Docker y subida a ACR
 ##### - Agregar variables a nuestro pipeline:
-  	  
+![Descripción Imagen 1](imagenes/17.jpg)
+##### - Agregar variable secreta cnn-string-qa desde la GUI de ADO que apunte a nuestra BD de SQL Server de QA como se indica en el instructivo 5.3
+![Descripción Imagen 1](imagenes/18.jpg)
+##### - Agregar tareas para crear un recurso Azure Container Instances que levante un contenedor con nuestra imagen de back
 ##### 4.1.10 - Ejecutar el pipeline y en Azure Portal acceder al recurso de Azure Container Instances creado. Copiar la url del contenedor y navegarlo desde browser. Verificar que traiga datos.
 ##### 4.1.11 - Agregar tareas para generar un recurso Azure Container Instances que levante un contenedor con nuestra imagen de front (DESAFIO)
 ##### - A la etapa creada en 4.1.9 Agregar tareas para generar contenedor en ACI con nuestra imagen de Front
