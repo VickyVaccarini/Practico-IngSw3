@@ -385,34 +385,34 @@ stages:
             --cpu $(container-cpu-front-qa) \
             --memory $(container-memory-front-qa)
 
-#  - job: IntegrationTesting
-#    displayName: 'Cypress'
-#    dependsOn: deploy_to_aci_qa
-#    variables:
-#      - name: baseUrl
-#        value: '$(frontContainerInstanceNameQA).eastus.azurecontainer.io'
+  - job: IntegrationTesting
+    displayName: 'Cypress'
+    dependsOn: deploy_to_aci_qa
+    variables:
+      - name: baseUrl
+        value: '$(frontContainerInstanceNameQA).eastus.azurecontainer.io'
 
-#    steps:
-#      - script: |
-#          cd $(Build.SourcesDirectory)/EmployeeCrudAngular
-#          npm install typescript ts-node
-#        displayName: 'Install TypeScript'
+    steps:
+      - script: |
+          cd $(Build.SourcesDirectory)/EmployeeCrudAngular
+          npm install typescript ts-node
+        displayName: 'Install TypeScript'
 
       # Crear la carpeta results si no existe
-#      - script: |
-#          mkdir $(Build.SourcesDirectory)\EmployeeCrudAngular\EmployeeCrudAngular\EmployeeCrudAngular\cypress\results
-#        displayName: 'Create Results Directory'
+      - script: |
+          mkdir $(Build.SourcesDirectory)\EmployeeCrudAngular\EmployeeCrudAngular\EmployeeCrudAngular\cypress\results
+        displayName: 'Create Results Directory'
 
-#      - script: |
-#          cd $(Build.SourcesDirectory)/EmployeeCrudAngular/EmployeeCrudAngular/EmployeeCrudAngular
-#          npx cypress run --config-file cypress.config.ts --env baseUrl=$(baseUrl)
-#        displayName: 'Run Cypress E2E Tests'
+      - script: |
+          cd $(Build.SourcesDirectory)/EmployeeCrudAngular/EmployeeCrudAngular/EmployeeCrudAngular
+          npx cypress run --config-file cypress.config.ts --env baseUrl=$(baseUrl)
+        displayName: 'Run Cypress E2E Tests'
 
-#      - task: PublishTestResults@2
-#        inputs:
-#          testResultsFiles: '$(Build.SourcesDirectory)/EmployeeCrudAngular/EmployeeCrudAngular/EmployeeCrudAngular/cypress/results/*.xml'
-#          testRunTitle: 'Cypress E2E Tests (QA)'
-#        displayName: 'Publish Cypress Test Results'
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFiles: '$(Build.SourcesDirectory)/EmployeeCrudAngular/EmployeeCrudAngular/EmployeeCrudAngular/cypress/results/*.xml'
+          testRunTitle: 'Cypress E2E Tests (QA)'
+        displayName: 'Publish Cypress Test Results'
 
   #---------------------------------------
   ### STAGE DEPLOY TO AZURE APP SERVICE QA
@@ -458,31 +458,31 @@ stages:
               az webapp config appsettings set --name $(WebAppApiNameContainersQA) --resource-group $(ResourceGroupName) \
                 --settings ConnectionStrings__DefaultConnection="$(cnn-string-qa)" \
 
-#  - job: IntegrationTesting
-#    displayName: 'Integration Tests'
-#    dependsOn:
-#    - 'DeployImagesToAppServiceQA'
-#    variables:
-#    - name: baseUrl
-#      value: '$(frontContainerInstanceNameQA).azurewebsites.net'
-#    steps:
-#    - task: CmdLine@2
-#      displayName: 'Install TypeScript'
-#      inputs:
-#        script: |
-#          cd $(Build.SourcesDirectory)\EmployeeCrudAngular\EmployeeCrudAngular\EmployeeCrudAngular\cypress\results
-#          npm install typescript ts-node
-#    - task: CmdLine@2
-#      displayName: 'Run Cypress E2E Tests'
-#      inputs:
-#        script: |
-#          cd $(Build.SourcesDirectory)/EmployeeCrudAngular
-#          npx cypress run --config-file cypress.config.ts --env baseUrl=$(baseUrl)
-#    - task: PublishTestResults@2
-#      inputs:
-#        testResultsFiles: '$(Build.SourcesDirectory)/EmployeeCrudAngular/EmployeeCrudAngular/EmployeeCrudAngular/cypress/results/*.xml'
-#        testRunTitle: 'Cypress E2E Tests (QA)'
-#      displayName: 'Publicar resultados de Cypress'
+  - job: IntegrationTesting
+    displayName: 'Integration Tests'
+    dependsOn:
+    - 'DeployImagesToAppServiceQA'
+    variables:
+    - name: baseUrl
+      value: '$(frontContainerInstanceNameQA).azurewebsites.net'
+    steps:
+    - task: CmdLine@2
+      displayName: 'Install TypeScript'
+      inputs:
+        script: |
+          cd $(Build.SourcesDirectory)\EmployeeCrudAngular\EmployeeCrudAngular\EmployeeCrudAngular\cypress\results
+          npm install typescript ts-node
+    - task: CmdLine@2
+      displayName: 'Run Cypress E2E Tests'
+      inputs:
+        script: |
+          cd $(Build.SourcesDirectory)/EmployeeCrudAngular
+          npx cypress run --config-file cypress.config.ts --env baseUrl=$(baseUrl)
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFiles: '$(Build.SourcesDirectory)/EmployeeCrudAngular/EmployeeCrudAngular/EmployeeCrudAngular/cypress/results/*.xml'
+        testRunTitle: 'Cypress E2E Tests (QA)'
+      displayName: 'Publicar resultados de Cypress'
 
         #------------------------------------------------------
         # DEPLOY DOCKER FRONT IMAGE TO AZURE APP SERVICE (QA)
